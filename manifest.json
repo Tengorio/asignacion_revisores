@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "appmode": "shiny",
+    "primary_rmd": null,
+    "primary_html": "app.R",
+    "content_category": "shiny",
+    "runtime": "shiny",
+    "required_packages": [
+      "shiny",
+      "shinydashboard",
+      "dplyr",
+      "readxl",
+      "tidyverse",
+      "lubridate",
+      "forecast",
+      "ggplot2",
+      "DT"
+    ]
+  },
+  "file_metadata": [
+    {
+      "path": "app.R",
+      "file_type": "shiny"
+    }
+  ]
+}
