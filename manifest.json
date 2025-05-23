@@ -1,4 +1,6 @@
 {
+  "version": 1,
+  "locale": "en_US.UTF-8",
   "metadata": {
     "appmode": "shiny",
     "primary_rmd": null,
@@ -17,6 +19,9 @@
       "DT"
     ]
   },
+  "python": null,
+  "quarto": null,
+  "r": "4.3.0",
   "file_metadata": [
     {
       "path": "app.R",
