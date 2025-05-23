@@ -7,19 +7,19 @@
     "runtime": "shiny",
     "environment": {
       "r": {
-        "version": "4.3.2"  // Versión compatible (ajusta según tu necesidad)
+        "version": "4.3.2"
       }
     }
   },
   "packages": [
-    {"package": "shiny", "version": "1.7.5"},
-    {"package": "shinydashboard", "version": "0.7.2"},
-    {"package": "dplyr", "version": "1.1.3"},
-    {"package": "readxl", "version": "1.4.3"},
-    {"package": "tidyverse", "version": "2.0.0"},
-    {"package": "lubridate", "version": "1.9.3"},
-    {"package": "forecast", "version": "8.21"},
-    {"package": "ggplot2", "version": "3.4.4"},
-    {"package": "DT", "version": "0.30"}
+    {"package": "shiny"},
+    {"package": "shinydashboard"},
+    {"package": "dplyr"},
+    {"package": "readxl"},
+    {"package": "tidyverse"},
+    {"package": "lubridate"},
+    {"package": "forecast"},
+    {"package": "ggplot2"},
+    {"package": "DT"}
   ]
 }
