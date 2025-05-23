@@ -39,20 +39,20 @@ ui <- dashboardPage(
       ),
       
       # Tab Series de Tiempo
-      tabItem(tabName = "series",
-              fluidRow(
-                box(title = "Modelo logístico para finalización", 
-                    plotOutput("plot4"), width = 12)
-              ),
-              fluidRow(
-                box(title = "Comparación de modelos", 
-                    plotOutput("plot5"), width = 12)
-              ),
-              fluidRow(
-                box(title = "Heatmap de proyectos", 
-                    plotOutput("plot6"), width = 12)
-              )
-      ),
+      #tabItem(tabName = "series",
+      #        fluidRow(
+      #          box(title = "Modelo logístico para finalización", 
+      #              plotOutput("plot4"), width = 12)
+      #        ),
+      #        fluidRow(
+      #          box(title = "Comparación de modelos", 
+      #              plotOutput("plot5"), width = 12)
+      #        ),
+      #        fluidRow(
+      #          box(title = "Heatmap de proyectos", 
+      #              plotOutput("plot6"), width = 12)
+      #        )
+      #),
       
       # Tab Distribución Respuestas
       tabItem(tabName = "respuestas",
@@ -67,18 +67,6 @@ ui <- dashboardPage(
                     plotOutput("plot9"), width = 6),
                 box(title = "Probabilidad acumulada de respuesta", 
                     plotOutput("plot10"), width = 6)
-              )
-      ),
-      
-      # Tab Datos Crudos
-      tabItem(tabName = "datos",
-              fluidRow(
-                box(title = "Datos de Revisión", 
-                    DTOutput("tabla_datos"), width = 12)
-              ),
-              fluidRow(
-                box(title = "Series de Tiempo", 
-                    DTOutput("tabla_series"), width = 12)
               )
       ),
       
@@ -101,10 +89,24 @@ ui <- dashboardPage(
                 box(title = "Resumen de Tiempos", 
                     tableOutput("tabla_tiempos"), width = 6)
               )
+      ),
+      
+      # Tab Datos Crudos
+      tabItem(tabName = "datos",
+              fluidRow(
+                box(title = "Datos de Revisión", 
+                    DTOutput("tabla_datos"), width = 12)
+              ),
+              fluidRow(
+                box(title = "Series de Tiempo", 
+                    DTOutput("tabla_series"), width = 12)
+              )
       )
-    )
-  )
-)
+      
+    ) #cierra tabItems
+  ) #cierra dashboardBody
+)  #cierra ui <- dashboardPage()
+
 
 # Server - Lógica del servidor
 server <- function(input, output, session) {
