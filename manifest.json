@@ -5,21 +5,22 @@
     "primary_html": "app.R",
     "content_category": "shiny",
     "runtime": "shiny",
-    "environment": {
-      "r": {
-        "version": "4.3.2"
-      }
-    }
+    "required_packages": [
+      "shiny",
+      "shinydashboard",
+      "dplyr",
+      "readxl",
+      "tidyverse",
+      "lubridate",
+      "forecast",
+      "ggplot2",
+      "DT"
+    ]
   },
-  "packages": [
-    {"package": "shiny"},
-    {"package": "shinydashboard"},
-    {"package": "dplyr"},
-    {"package": "readxl"},
-    {"package": "tidyverse"},
-    {"package": "lubridate"},
-    {"package": "forecast"},
-    {"package": "ggplot2"},
-    {"package": "DT"}
+  "file_metadata": [
+    {
+      "path": "app.R",
+      "file_type": "shiny"
+    }
   ]
 }
